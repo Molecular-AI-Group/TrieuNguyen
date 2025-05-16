@@ -6,9 +6,9 @@ from model.sublayer import *
 from torch.nn import LayerNorm, LeakyReLU, BatchNorm1d
 
 
-class DGE_Encoder(nn.Module) : 
+class DGVAE_Encoder(nn.Module) : 
     def __init__(self, dim_encoder, size_graph_vocab, dim_edge, num_head, num_layer, dropout_encoder, dropout_gat) : 
-        super(DGE_Encoder, self).__init__()
+        super(DGVAE_Encoder, self).__init__()
         self.layers = nn.ModuleList()
         self.embed = gnn.GATv2Conv(size_graph_vocab, dim_encoder//num_head, heads=num_head, dropout=dropout_gat, edge_dim=dim_edge)
 
@@ -140,7 +140,7 @@ class TGVAEv2(nn.Module) :
         self.smi_embedding = SmilesEmbedding(size_smi_vocab, dim_decoder, dropout_decoder)
 
         if model == 'tgvaev2' or model == 'default' : self.encoder = Encoder(dim_encoder, dim_encoder_ff, size_edge_vocab, size_graph_vocab, num_encoder_head, num_encoder_layer, dropout_encoder, dropout_gat)
-        if model == 'simple' : self.encoder = DGE_Encoder(dim_encoder, size_graph_vocab, size_edge_vocab, num_encoder_head, num_encoder_layer, dropout_encoder, dropout_gat)
+        if model == 'simple' : self.encoder = DGVAE_Encoder(dim_encoder, size_graph_vocab, size_edge_vocab, num_encoder_head, num_encoder_layer, dropout_encoder, dropout_gat)
 
         self.latent_model = LatentModel(dim_encoder, dim_latent) 
         self.decoder = Decoder(dim_decoder, dim_latent, dim_decoder_ff, num_decoder_head, num_decoder_layer, dropout_decoder)
