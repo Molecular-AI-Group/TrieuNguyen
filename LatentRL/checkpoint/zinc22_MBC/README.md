@@ -1,0 +1,1 @@
+- Checkpoint can be downloaded here: https://drive.google.com/drive/folders/1Axrr_tsUfPHqz33fVvadJSjQKFbNUAEs
