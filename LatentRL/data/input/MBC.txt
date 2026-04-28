@@ -1,0 +1,1 @@
+c1c(c(c2c(c1)c(c(c(=O)o2)NC(=O)c1cc(c(cc1)O)CC=C(C)C)O)C)O[C@H]1[C@@H]([C@@H]([C@H](C(O1)(C)C)OC)OC(=O)c1[nH]c(cc1)C)O
