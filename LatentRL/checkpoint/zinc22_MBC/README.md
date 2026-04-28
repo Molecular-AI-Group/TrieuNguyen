@@ -1,1 +1,1 @@
-- Checkpoint can be downloaded here: https://drive.google.com/drive/folders/1Axrr_tsUfPHqz33fVvadJSjQKFbNUAEs
+- Checkpoint can be downloaded here: https://drive.google.com/drive/folders/1QdBZPOug5smfN3r6uMS_yGJ3VCEKtD1z?usp=sharing
