@@ -1,0 +1,2 @@
+- base pretraining molecules from ZINC22: https://cartblanche.docking.org/
+- building block libraries from Enamine: https://enamine.net/
