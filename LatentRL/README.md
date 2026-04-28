@@ -25,8 +25,7 @@ This repository supports three end-to-end workflows:
 
 ## Requirements
 
-- Linux/macOS (Linux is most tested)
-- Python environment with dependencies from `requirements.txt`
+- Python 3.12.3 environment with dependencies from `requirements.txt`
 - CUDA-capable GPU recommended for training/RL
 - For docking workflow: AutoDock Vina binaries, receptor/config files, and a SLURM environment (`sbatch`, `squeue`)
 
@@ -61,7 +60,7 @@ Before running `get_pretrain_data.py`, download:
 python get_pretrain_data.py \
   --core "CCCC" \
   --pretrain data/raw/zinc22/zinc22_heavy_atoms_30to49_canonical.txt \
-  --building-blocks data/raw/enamine_building_blocks_jan2026/Enamine_AlkylHalides_19893cmpds_20260108.sdf \
+  --building-blocks data/raw/enamine_building_blocks/Enamine_AlkylHalides_19893cmpds_20260108.sdf \
   --name my_dataset
 ```
 
