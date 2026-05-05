@@ -8,6 +8,11 @@ This repository supports three end-to-end workflows:
 2. **Pretrain DGVAE** on SMILES (`train.py`)
 3. **Optimize molecules with RL** using either property rewards (`run_rl.py`) or docking rewards (`run_rl_docking.py`)
 
+## Full Data and Outputs
+
+The complete datasets and generated outputs for this project are available at:
+
+👉 [<FULL REPO>](https://drive.google.com/drive/folders/140rbA48iXOu5bO40XlrwioVf9wDG3NAU?usp=drive_link)
 ---
 
 ## What is in this repository
